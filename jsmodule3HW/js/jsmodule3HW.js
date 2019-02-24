@@ -52,7 +52,7 @@ const isLoginValid = function (login) {
 };
 
 //проверка на совпадения
-const isLoginUnique = function (login, allLogins) {
+const isLoginUnique = function (logins, allLogins) {
     if (allLogins.includes(logins)) {
         alert('Такой логин уже используется!');
         return false;
